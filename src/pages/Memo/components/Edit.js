@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { v4 } from "uuid";
 
-const Edit = ({ add }) => {
+const Edit = ({ add, submittingStatue }) => {
   const [note, setNote] = useState("");
   function noteChange(e) {
     setNote(e.target.value);
@@ -16,7 +16,7 @@ const Edit = ({ add }) => {
   }
 
   function addItem() {
-    // submittingStatue.current = true
+    submittingStatue.current = true
     add(function (prevData) {
       return [
         {

@@ -14,7 +14,7 @@ const List = ({ listData, deleteData, submittingStatue }) => {
             date={date}
             time={time}
             deleteData={deleteData}
-            // submittingStatue={submittingStatue}
+            submittingStatue={submittingStatue}
           />
         );
       })}
